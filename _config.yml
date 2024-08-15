@@ -19,40 +19,31 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Ben Elliot's Portfolio"
-email: "benjelliot@outlook.com"
+email: "your-email@example.com"
 description: "Showcasing the projects of Ben Elliot, a passionate developer focused on creating impactful software solutions."
 baseurl: "" # Leave as is unless you have a subpath
 url: "https://ben-elliot27.github.io" # Update with your actual GitHub Pages URL
-twitter_username: "" # Update if you have a Twitter account
-github_username: "Ben-elliot27" # Your GitHub username
-# SEO settings
-lang: "en"
+twitter_username: "BenElliot27"
+github_username: "Ben-elliot27"
 
-
-# Build settings
+# Theme
 theme: jekyll-theme-cayman-blog
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
-paginate: 5 # Number of projects/posts per page
+
+# Pagination
+paginate: 5
 paginate_path: "/page/:num/"
 
-
-# Navigation links
-header_pages:
-  - index.md
-  - about.md
-  - projects.md
-  - contact.md
-
-# Footer links (if supported by theme)
-footer_links:
-  - title: "GitHub"
-    url: "https://github.com/Ben-elliot27"
-  - title: "LinkedIn"
-    url: "https://linkedin.com/in/ben-elliot"
+# Collections (for projects)
+collections:
+  projects:
+    output: true
 
 
 # Exclude from processing.
