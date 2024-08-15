@@ -26,15 +26,17 @@ url: "https://ben-elliot27.github.io" # Update with your actual GitHub Pages URL
 twitter_username: "BenElliot27"
 github_username: "Ben-elliot27"
 
-# Theme
-theme: jekyll-theme-cayman-blog
+show_downloads: false
 
-# Plugins
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-paginate
+
+
 
 # Pagination
 paginate: 5
