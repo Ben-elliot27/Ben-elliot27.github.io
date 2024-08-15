@@ -41,8 +41,8 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 
 
 buttons:
-  zip_url: https://github.com/tuur29/pages-themes-cayman, http://www.uknowfeynman.co.uk
-  zip_title: View Documentation, View Game
-  zip_hide: false
-  tar_hide: true
-  github_hide: true
+  zip_url: [https://github.com/tuur29/pages-themes-cayman, http://www.uknowfeynman.co.uk]
+  zip_title: [View Documentation, View Game]
+  zip_hide: [false, false]
+  tar_hide: [true, true]
+  github_hide: [true, false]
