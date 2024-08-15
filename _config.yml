@@ -6,7 +6,7 @@ url: "https://ben-elliot27.github.io" # Update with your actual GitHub Pages URL
 twitter_username: "BenElliot27"
 github_username: "Ben-elliot27"
 
-remote_theme: tuur29/cayman@v0.2.0
+remote_theme: tuur29/pages-themes-cayman
 
 plugins:
   - jekyll-feed
