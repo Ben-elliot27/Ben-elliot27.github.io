@@ -22,3 +22,10 @@ paginate_path: "/page/:num/"
 collections:
   projects:
     output: true
+
+
+footer_links:
+  - title: "GitHub"
+  - url: "https://github.com/Ben-elliot27"
+  - email: "your-email@example.com"
+  - github_username: "Ben-elliot27"
