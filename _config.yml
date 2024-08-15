@@ -1,51 +1,69 @@
-baseurl: '/Ben-elliot27.github.io'
-permalink: pretty
-title: 'Jekyll Serif'
+# Site settings
+email: "your-email@example.com"
+description: "Showcasing the projects of Ben Elliot, a passionate developer focused on creating impactful software solutions."
+baseurl: "" # Leave as is unless you have a subpath
+url: "https://ben-elliot27.github.io" # Update with your actual GitHub Pages URL
+twitter_username: "BenElliot27"
+github_username: "Ben-elliot27"
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
+# Theme settings
+remote_theme: mmistakes/minimal-mistakes
 
-home:
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-  team:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
-
-sass:
-  style: compressed # possible values: nested expanded compact compressed
-
+# Plugins
 plugins:
-  - jekyll-environment-variables
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-collections # Ensure collections are fully supported
+  - jekyll-archives # Optional: For better archive organization
+  - jekyll-footnotes # For footnote support
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - LICENSE.md
-  - LICENSE
-  - README.md
+# Pagination
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Collections (for projects)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+    layout: single
+
+# Footer links
+footer_links:
+  - title: "GitHub"
+    url: "https://github.com/Ben-elliot27"
+  - title: "Email"
+    url: "mailto:your-email@example.com"
+
+# Minimal Mistakes specific settings
+author_profile: true
+show_downloads: true
+toc: true # Enable table of contents
+header:
+  title: "Ben Elliot"
+  image: assets/images/header.jpg # Replace with your header image
+  caption: "A passionate developer creating impactful software solutions."
+
+# UI Color
+color_scheme: "dark" # Options include "light" and "dark"
+header_text_color: "#ffffff"
+footer_text_color: "#ffffff"
+
+# Logo and styling
+logo:
+  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
+    alt: "GitHub Octocat"
+
+# Syntax highlighting
+highlighter: rouge
+syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
+
+# Buttons and links
+buttons:
+  zip_url: https://github.com/mmistakes/minimal-mistakes
+  zip_title: View Documentation
+  zip_hide: false
+  tar_hide: true
+  github_hide: true
