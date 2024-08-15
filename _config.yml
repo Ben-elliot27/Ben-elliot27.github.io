@@ -1,6 +1,6 @@
 # Theme Settings
 minimal_mistakes_skin: "default" # Skins: "air", "aqua", "contrast", etc.
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 # Site Settings
 locale: "en-US"
