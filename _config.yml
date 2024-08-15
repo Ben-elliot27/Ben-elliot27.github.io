@@ -44,7 +44,7 @@ show_downloads: true
 toc: true # Enable table of contents
 header:
   title: "Ben Elliot"
-  image: assets/images/header.jpg # Replace with your header image
+  #image: assets/images/header.jpg # Replace with your header image
   caption: "A passionate developer creating impactful software solutions."
 
 # UI Color
