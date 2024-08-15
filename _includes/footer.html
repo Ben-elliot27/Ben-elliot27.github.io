@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <p>&copy; {{ site.copyright }} | Built with <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+  <ul class="social-media">
+    {% for link in site.footer.links %}
+      <li><a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+</footer>

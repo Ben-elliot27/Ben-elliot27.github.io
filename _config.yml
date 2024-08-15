@@ -1,70 +1,148 @@
-# Site settings
-email: "your-email@example.com"
-description: "Showcasing the projects of Ben Elliot, a passionate developer focused on creating impactful software solutions."
-baseurl: ""
+# Theme Settings
+minimal_mistakes_skin: "default" # Skins: "air", "aqua", "contrast", etc.
+
+# Site Settings
+locale: "en-US"
+title: "Ben Elliot's Portfolio"
+title_separator: "-"
+subtitle: "Showcasing My Work and Projects"
+name: "Ben Elliot"
+description: "An amazing portfolio showcasing my work."
 url: "https://ben-elliot27.github.io"
-twitter_username: "BenElliot27"
-github_username: "Ben-elliot27"
+baseurl: ""
+repository: "Ben-elliot27/Ben-elliot27.github.io"
+logo: "/assets/images/logo.png"
+masthead_title: " "
+breadcrumbs: true
+words_per_minute: 200
+enable_copy_code_button: true
+copyright: "Ben Elliot"
+copyright_url: "https://ben-elliot27.github.io"
+comments:
+  provider: false # Enable if needed
 
-remote_theme: mmistakes/minimal-mistakes
+# Social Sharing
+twitter:
+  username: "BenElliot27"
+og_image: "/assets/images/og-image.png"
+social:
+  type: "Person"
+  name: "Ben Elliot"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ben-elliot27"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/BenElliot27"
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "YOUR_TRACKING_ID"
+
+# Site Author
+author:
+  name: "Ben Elliot"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "A passionate developer."
+  location: "Somewhere, Earth"
+  email: "your-email@example.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your-email@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-profile"
+
+# Footer Links
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ben-elliot27"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/BenElliot27"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-profile"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - vendor
+  - node_modules
+  - Gemfile
+  - package.json
+  - tmp
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-assets-cache
+
+keep_files:
+  - .git
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  auto_ids: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: "America/New_York"
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-footnotes
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
   - jekyll-include-cache
 
-paginate: 5
-paginate_path: "/page/:num/"
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-# Navigation setup
-header:
-  title: "Ben Elliot’s Portfolio"
-  nav:
-    - text: "Home"
-      url: "/"
-    - text: "Projects"
-      url: "/projects/"
-    - text: "Blog"
-      url: "/blog/"
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:name/
-    layout: single
-
-# Footer links
-footer_links:
-  - title: "GitHub"
-    url: "https://github.com/Ben-elliot27"
-  - title: "Email"
-    url: "mailto:your-email@example.com"
-
-# Minimal Mistakes specific settings
-author_profile: true
-show_downloads: true
-toc: true
-
-# UI Color
-color_scheme: "dark"
-
-# Logo and styling
-# logo:
-#   - image: https://github.githubassets.com/images/icons/emoji/octocat.png
-#     alt: "GitHub Octocat"
-
-# Syntax highlighting
-highlighter: rouge
-syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
-
-# Buttons and links
-buttons:
-  zip_url: https://github.com/mmistakes/minimal-mistakes
-  zip_title: View Documentation
-  zip_hide: false
-  tar_hide: true
-  github_hide: true
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

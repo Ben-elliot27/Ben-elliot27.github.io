@@ -1,8 +1,6 @@
 ---
 layout: home
-title: "Welcome to Ben Elliot’s Portfolio"
+title: "Welcome to Ben Elliot's Portfolio"
 ---
 
-This is the home page of Ben Elliot's portfolio, showcasing projects and blogs.
-
-
+Welcome to my portfolio! Here you will find my projects and blog posts.
