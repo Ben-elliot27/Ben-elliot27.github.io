@@ -29,7 +29,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
-    layout: single
+#    layout: single
 
 # Footer links
 footer_links:
@@ -52,14 +52,14 @@ color_scheme: "dark" # Options include "light" and "dark"
 header_text_color: "#ffffff"
 footer_text_color: "#ffffff"
 
-# Logo and styling
-logo:
-  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
-    alt: "GitHub Octocat"
+## Logo and styling
+#logo:
+#  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
+#    alt: "GitHub Octocat"
 
 # Syntax highlighting
 highlighter: rouge
-syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
+#syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
 
 # Buttons and links
 buttons:
