@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "Ben Elliot"
 ---
 
 # Welcome to Ben Elliot's Portfolio
