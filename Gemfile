@@ -16,6 +16,8 @@ gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-paginate"
 gem 'jekyll-include-cache'
+gem "minimal-mistakes-jekyll"
+
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
