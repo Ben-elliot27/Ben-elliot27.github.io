@@ -53,9 +53,9 @@ header_text_color: "#ffffff"
 footer_text_color: "#ffffff"
 
 ## Logo and styling
-#logo:
-#  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
-#    alt: "GitHub Octocat"
+logo:
+  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
+    alt: "GitHub Octocat"
 
 # Syntax highlighting
 highlighter: rouge
