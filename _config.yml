@@ -23,9 +23,6 @@ comments:
   provider: false # Enable if needed
 
 # Social Sharing
-twitter:
-  username: "BenElliot27"
-og_image: "/assets/images/og-image.png"
 social:
   type: "Person"
   name: "Ben Elliot"
@@ -33,9 +30,6 @@ social:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Ben-elliot27"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/BenElliot27"
 
 # Analytics
 analytics:
@@ -59,17 +53,14 @@ author:
       url: "https://linkedin.com/in/your-profile"
 
 # Footer Links
-#footer:
-#  links:
-#    - label: "GitHub"
-#      icon: "fab fa-fw fa-github"
-#      url: "https://github.com/Ben-elliot27"
-#    - label: "Twitter"
-#      icon: "fab fa-fw fa-twitter"
-#      url: "https://twitter.com/BenElliot27"
-#    - label: "LinkedIn"
-#      icon: "fab fa-fw fa-linkedin"
-#      url: "https://linkedin.com/in/your-profile"
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ben-elliot27"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-profile"
 
 # Reading Files
 include:
