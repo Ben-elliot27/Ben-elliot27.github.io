@@ -63,9 +63,8 @@ footer:
       url: "https://linkedin.com/in/your-profile"
 
 # Reading Files
-include:
-  - .htaccess
-  - _pages
+include: ["_pages", ".htaccess", "_portfolio"]
+
 exclude:
   - vendor
   - node_modules
@@ -125,6 +124,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
 
 
 collections:
