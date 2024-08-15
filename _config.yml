@@ -1,35 +1,40 @@
 # Site settings
 email: "your-email@example.com"
 description: "Showcasing the projects of Ben Elliot, a passionate developer focused on creating impactful software solutions."
-baseurl: "" # Leave as is unless you have a subpath
-url: "https://ben-elliot27.github.io" # Update with your actual GitHub Pages URL
+baseurl: ""
+url: "https://ben-elliot27.github.io"
 twitter_username: "BenElliot27"
 github_username: "Ben-elliot27"
 
-# Theme settings
 remote_theme: mmistakes/minimal-mistakes
 
-# Plugins
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-collections # Ensure collections are fully supported
-  - jekyll-archives # Optional: For better archive organization
-  - jekyll-footnotes # For footnote support
+  - jekyll-footnotes
 
-# Pagination
 paginate: 5
 paginate_path: "/page/:num/"
 
-# Collections (for projects)
+# Navigation setup
+header:
+  title: "Ben Elliot’s Portfolio"
+  nav:
+    - text: "Home"
+      url: "/"
+    - text: "Projects"
+      url: "/projects/"
+    - text: "Blog"
+      url: "/blog/"
+
+# Collections
 collections:
   projects:
     output: true
     permalink: /:collection/:name/
-#    layout: single
+    layout: single
 
 # Footer links
 footer_links:
@@ -41,25 +46,19 @@ footer_links:
 # Minimal Mistakes specific settings
 author_profile: true
 show_downloads: true
-toc: true # Enable table of contents
-header:
-  title: "Ben Elliot"
-  #image: assets/images/header.jpg # Replace with your header image
-  caption: "A passionate developer creating impactful software solutions."
+toc: true
 
 # UI Color
-color_scheme: "dark" # Options include "light" and "dark"
-header_text_color: "#ffffff"
-footer_text_color: "#ffffff"
+color_scheme: "dark"
 
-## Logo and styling
-logo:
-  - image: https://github.githubassets.com/images/icons/emoji/octocat.png
-    alt: "GitHub Octocat"
+# Logo and styling
+# logo:
+#   - image: https://github.githubassets.com/images/icons/emoji/octocat.png
+#     alt: "GitHub Octocat"
 
 # Syntax highlighting
 highlighter: rouge
-#syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
+syntax_theme: https://cdn.jsdelivr.net/gh/stygiansaby/rouge-themes/css/monokai.css
 
 # Buttons and links
 buttons:

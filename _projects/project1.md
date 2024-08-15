@@ -1,9 +1,9 @@
 ---
-layout: project
-title: "Project 1 Title"
-description: "A brief description of what this project is about."
-category: featured
+title: "Project 1"
+layout: single
 ---
+
+Description of Project 1.
 
 ### Project Overview
 This project is focused on...

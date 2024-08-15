@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<header>
+  <h1>{{ page.title | default: site.title }}</h1>
+  <nav>
+    {% if site.header.nav %}
+      <ul>
+        {% for link in site.header.nav %}
+          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </nav>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  {% include footer.html %}
+</footer>
