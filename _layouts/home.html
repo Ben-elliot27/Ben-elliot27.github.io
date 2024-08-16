@@ -2,23 +2,15 @@
 layout: default
 ---
 
-<header>
-  <h1>{{ page.title | default: site.title }}</h1>
-  <nav>
-    {% if site.header.nav %}
-      <ul>
-        {% for link in site.header.nav %}
-          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  </nav>
-</header>
-
-<main>
-  {{ content }}
-</main>
-
-<footer>
-  {% include footer.html %}
-</footer>
+<section class="portfolio">
+  <h2>Projects</h2>
+  <ul>
+    {% for item in site.portfolio %}
+    <li>
+      <a href="{{ item.url | relative_url }}">
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
