@@ -3,7 +3,7 @@ minimal_mistakes_skin: "aqua"
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 # Site Settings
-locale: "en-US"
+locale: "en-GB"
 title: "Ben Elliot's Portfolio"
 title_separator: "-"
 subtitle: "Showcasing My Work and Projects"
