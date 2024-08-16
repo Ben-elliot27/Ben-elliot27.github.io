@@ -1,5 +1,5 @@
 # Theme Settings
-minimal_mistakes_skin: "default" # Skins: "air", "aqua", "contrast", etc.
+minimal_mistakes_skin: "aqua" # Skins: "air", "aqua", "contrast", etc.
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 # Site Settings
@@ -13,7 +13,7 @@ url: "https://ben-elliot27.github.io"
 baseurl: ""
 repository: "Ben-elliot27/Ben-elliot27.github.io"
 logo: "/assets/images/logo.png"
-masthead_title: " "
+masthead_title: "Custom Title"
 breadcrumbs: true
 words_per_minute: 200
 enable_copy_code_button: true
@@ -33,9 +33,9 @@ social:
 
 # Analytics
 analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "YOUR_TRACKING_ID"
+  provider: false
+#  google:
+#    tracking_id: "YOUR_TRACKING_ID"
 
 # Site Author
 author:
@@ -63,7 +63,10 @@ footer:
       url: "https://linkedin.com/in/your-profile"
 
 # Reading Files
-include: ["_pages", ".htaccess", "_portfolio"]
+include:
+  - _pages
+  - .htaccess
+  - _portfolio
 
 exclude:
   - vendor
@@ -77,7 +80,7 @@ exclude:
 
 keep_files:
   - .git
-
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -97,14 +100,19 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: "America/New_York"
-
-# Pagination
-paginate: 5
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
+timezone: GB
 
 # Plugins
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -147,7 +155,7 @@ defaults:
 
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
@@ -155,7 +163,7 @@ defaults:
 
   # _portfolio
   - scope:
-      path: ""
+      path: "_portfolio"
       type: portfolio
     values:
       layout: single
