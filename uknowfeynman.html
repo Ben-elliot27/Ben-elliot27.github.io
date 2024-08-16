@@ -1,0 +1,175 @@
+<!--
+  UKnowFeynman Project Page
+  Developed with the base template by Nisar Hassan Naqvi
+  for use with the UKnowFeynman project by Ben Elliot.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Site Title -->
+  <title>UKnowFeynman - A Particle Physics Card Game</title>
+
+  <meta name="description" content="UKnowFeynman is an educational multiplayer card game designed to teach particle physics concepts interactively." />
+  <meta name="keywords" content="UKnowFeynman, Particle Physics, Educational Game, Multiplayer, Card Game" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <header class="header header--uknowfeynamn" role="banner" id="top">
+
+    <a href="index.html" class="home-button">🏠</a>
+
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
+          <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#game-rules" class="nav__link">Game Rules</a></li>
+          <li class="nav__item"><a href="#usage" class="nav__link">Usage</a></li>
+          <li class="nav__item"><a href="#admin-controls" class="nav__link">Admin Controls</a></li>
+          <li class="nav__item"><a href="#known-issues" class="nav__link">Known Issues</a></li>
+          <li class="nav__item"><a href="#contributing" class="nav__link">Contributing</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>UKnowFeynman</span>
+        </h1>
+        <p>A Multiplayer Card Game for Learning Particle Physics.</p>
+        <a href="http://www.uknowfeynman.co.uk" class="btn btn--pink">Play Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Project Overview ***** -->
+    <section class="project" id="overview">
+      <div class="row">
+        <h2>Project Overview</h2>
+        <div class="project__content">
+          <p>
+            Feynman UNO Flip is an educational card game that brings the complexities of particle physics to life through interactive gameplay. Originally developed as a physical card game for a university project in collaboration with lecturers, researchers, and UCL Business, this virtual version aims to make the game accessible to a broader audience.
+          </p>
+          <p>
+            Inspired by the interactive sessions held with GCSE and A-Level students, this online version allows players to learn particle physics concepts anywhere in the world.
+          </p>
+          <img src="uno_game/static/images/main_logo-transparent.png" alt="Main Page Image" width="30%">
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Features ***** -->
+    <section class="features" id="features">
+      <div class="row">
+        <h2>Features</h2>
+        <ul class="feature__list">
+          <li><strong>Educational Gameplay:</strong> Learn about particle physics and interactions through strategic card play.</li>
+          <li><strong>Multiplayer:</strong> Play with friends or students from anywhere in the world.</li>
+          <li><strong>Flip Mechanic:</strong> Switch between two sides of the cards, each representing different particle properties.</li>
+          <li><strong>Customizable Game Settings:</strong> Admin controls allow for game management and customization.</li>
+          <li><strong>Interactive Tutorial:</strong> Step-by-step guide to help new players learn the rules and mechanics.</li>
+        </ul>
+        <div class="features__images">
+          <img src="uno_game/static/images/MainPageIMG.png" width="360" alt="Main Game Page"/>
+          <img src="uno_game/static/images/InGameIMG.PNG" width="411" alt="In Game View"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Game Rules ***** -->
+    <section class="game-rules" id="game-rules">
+      <div class="row">
+        <h2>Game Rules</h2>
+        <p>The game follows a set of unique rules inspired by particle physics principles:</p>
+        <ul class="rules__list">
+          <li><strong>Color and Particle Matching:</strong> Players can play a card that matches the color or particle type of the current card.</li>
+          <li><strong>Boson Rule:</strong> When a boson card is played, the next card must be of the same class as the bottom card.</li>
+          <li><strong>Weak Boson/Photon Rule:</strong> Cards can be played as long as charge conservation holds, and the particle is not a boson.</li>
+          <li><strong>Gluon Rule:</strong> When a gluon is played, the next card must match the particle type exactly.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Usage ***** -->
+    <section class="usage" id="usage">
+      <div class="row">
+        <h2>Usage</h2>
+        <p>
+          <strong>Playing the Game:</strong>
+        </p>
+        <ul class="usage__list">
+          <li>Navigate to the game URL or run it locally.</li>
+          <li>Create or join a game.</li>
+          <li>Use the interface to draw cards, play cards, and flip the deck.</li>
+          <li>Follow the in-game prompts and tutorials to understand the gameplay mechanics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Admin Controls ***** -->
+    <section class="admin-controls" id="admin-controls">
+      <div class="row">
+        <h2>Admin Controls</h2>
+        <p>Admins can manage games through the admin controls page. The admin interface includes features to:</p>
+        <ul class="admin__list">
+          <li>Reset games</li>
+          <li>Remove inactive games</li>
+          <li>Monitor active games and players</li>
+        </ul>
+        <img src="uno_game/static/images/AdminPageIMG.JPG" alt="Admin Controls" width="100%" />
+      </div>
+    </section>
+
+    <!-- ***** Known Issues and TODOs ***** -->
+    <section class="known-issues" id="known-issues">
+      <div class="row">
+        <h2>Known Issues and TODOs</h2>
+        <ul class="issues__list">
+          <li><strong>Animations:</strong> Implement card animations for smoother gameplay.</li>
+          <li><strong>Flip Mechanic:</strong> Currently, flipping doesn't affect other players' views. This might become a feature.</li>
+          <li><strong>Card Highlighting:</strong> When flipping locally, the highlight on cards may not persist.</li>
+          <li><strong>Interactive Instructions:</strong> Improve in-game instructions.</li>
+          <li><strong>Card Positioning on iOS:</strong> Fix card positioning issues on iOS devices.</li>
+          <li><strong>Game Manager:</strong> Add a game manager feature for better control over game sessions.</li>
+          <li><strong>Button Edge Cases:</strong> Address edge cases related to button press timings.</li>
+          <li><strong>Playing and Drawing on a H card:</strong> Sometimes the first click when drawing on a Higgs card draws too many cards. Need to delay time spans between cards being drawn on a Higgs to signify what is happening.</li>
+          <li><strong>Game Resetting:</strong> Other players visually don't reset correctly - still shows other players as the same amount of cards as before, however this updates as soon as any action is taken (visual update not called when resetting game).</li>
+          <li><strong>Multi-Play Error Messages:</strong> Get an error message saying not your turn when trying multi-play. This should not happen, but does not affect gameplay.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Contributing ***** -->
+    <section class="contributing" id="contributing">
+      <div class="row">
+        <h2>Contributing</h2>
+        <p>We welcome contributions to enhance the game. Please submit issues and pull requests to the repository. Before contributing, ensure you follow the code of conduct.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ***** Footer ***** -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <div class="footer__text-box">
+        <p>&copy; 2024 UKnowFeynman. All rights reserved.</p>
+        <p>Developed by Ben Elliot, in collaboration with UCL Business and UCL researchers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

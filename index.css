@@ -402,15 +402,38 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
+.home-button {
+  position: fixed; /* Makes the button stay fixed while scrolling */
+  top: 30px;       /* Adjust this value to set the distance from the top of the page */
+  left: 30px;      /* Adjust this value to set the distance from the left side */
+  background-color: #ff0066; /* Button background color */
+  color: #ffffff;  /* Button text color */
+  padding: 10px 20px; /* Button padding for a nice appearance */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 16px; /* Adjust the font size as needed */
+  z-index: 1000;   /* Ensure it stays on top of other elements */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
 
+.home-button:hover {
+  background-color: #cc0052; /* Darker shade on hover */
+}
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('images/header.jpg');
+        url('images/header_highq.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+}
+/* Add this to your CSS file */
+.header--uknowfeynamn {
+  background-image: url('images/uknowfeynmanLogo.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .header__text {
