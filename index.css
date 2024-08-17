@@ -515,10 +515,25 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+/* Applies when screen width is 901px or wider */
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
         margin: 0 0 0 10rem;
+    }
+
+    /* Ensure both images and videos fill the container */
+    .work__image-box .work__image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Applies when screen width is less than 901px */
+@media(max-width: 900px) {
+    .work__image-box .work__image {
+        width: 100%;
+        height: auto;
     }
 }
 
