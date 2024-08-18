@@ -436,9 +436,9 @@ body:not(.user-is-tabbing) a:focus {
   background-repeat: no-repeat;
 }
 .header--UCL-SpaceLab {
-  background-image: url('assets/images/uknowfeynmanLogo.png');
-  background-size: contain;
-  background-position: right;
+  background-image: url('assets/images/UCL-SpaceLab/BH_gif.gif');
+  /*background-size: contain;*/
+  background-position: center;
   background-repeat: no-repeat;
 }
 
