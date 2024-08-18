@@ -435,6 +435,12 @@ body:not(.user-is-tabbing) a:focus {
   background-position: right;
   background-repeat: no-repeat;
 }
+.header--UCL-SpaceLab {
+  background-image: url('assets/images/uknowfeynmanLogo.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
 
 .header__text {
     position: absolute;
