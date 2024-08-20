@@ -2,8 +2,11 @@
 
 TODO:
 
-- Resize navigation bar with screen size
 - Update Readme
+- Navigate to page not just html element
+- Get image of 1v1 gameplay for Uknow
+- Get better quality recording of uknow
+- Fix alignment of 1v1 area
 
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
