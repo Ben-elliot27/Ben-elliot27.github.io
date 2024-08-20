@@ -660,17 +660,47 @@ body:not(.user-is-tabbing) a:focus {
 /* Feature Icons */
 
 /* Container for feature icons */
+
 .feature__icons {
   display: flex;
   justify-content: space-around; /* Adjust spacing between icons */
-  margin-bottom: 50px; /* Add some space between the icons and the feature list */
+  margin-bottom: var(--gutter-normal); /* Use a variable for spacing */
 }
 
-/* Icon styling */
-.feature__icon {
-  width: 130px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Optional: round the icons */
-  object-fit: cover; /* Ensure the icons fit within their container */
-  filter: invert(1); /* Invert colors */
+/* Applies when screen width is 901px or wider */
+@media(min-width: 901px) {
+  .feature__icons {
+    margin-bottom: 2rem; /* Adjust spacing as needed for larger screens */
+  }
+
+  .feature__icon {
+    width: 100px; /* Larger icons on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the icons fit within their container */
+    filter: invert(1); /* Invert colors */
+  }
+}
+
+/* Applies when screen width is less than 901px */
+@media(max-width: 900px) {
+  .feature__icons {
+    margin-bottom: 1rem; /* Adjust spacing for smaller screens */
+  }
+
+  .feature__icon {
+    width: 60px; /* Smaller icons on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the icons fit within their container */
+    filter: invert(1); /* Invert colors */
+  }
+}
+
+/* Optional: Additional responsiveness for very small screens */
+@media(max-width: 600px) {
+  .feature__icon {
+    width: 30px; /* Even smaller icons for very small screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the icons fit within their container */
+    filter: invert(1); /* Invert colors */
+  }
 }
