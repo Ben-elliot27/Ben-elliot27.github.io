@@ -655,3 +655,22 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+
+/* Feature Icons */
+
+/* Container for feature icons */
+.feature__icons {
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between icons */
+  margin-bottom: 50px; /* Add some space between the icons and the feature list */
+}
+
+/* Icon styling */
+.feature__icon {
+  width: 130px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: round the icons */
+  object-fit: cover; /* Ensure the icons fit within their container */
+  filter: invert(1); /* Invert colors */
+}
