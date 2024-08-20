@@ -350,21 +350,27 @@ body:not(.user-is-tabbing) a:focus {
     margin-right: var(--gutter-medium);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 800px) {
     .nav {
         justify-content: center;
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 750px) {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 650px) {
     .nav {
         font-size: var(--font-size-small);
+    }
+}
+
+@media(max-width: 550px) {
+    .nav {
+        font-size: 1.2rem;
     }
 }
 
