@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/camelsLogo.png" />
+
+  <!-- Site Title -->
+  <title>CAMELS Multifield Dataset Analysis</title>
+
+  <meta name="description" content="An in-depth analysis of the CAMELS Multifield Dataset using deep learning to determine cosmological parameters." />
+  <meta name="keywords" content="CAMELS, Cosmology, Astrophysics, Deep Learning, Dataset Analysis" />
+  <link rel="stylesheet" href="../../index.css" />
+</head>
+
+<body>
+
+  <header class="header header--camels" role="banner" id="top">
+
+    <a href="../../#camels" class="home-button">🏠</a>
+
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
+          <li class="nav__item"><a href="#dataset" class="nav__link">Dataset Description</a></li>
+          <li class="nav__item"><a href="#methodology" class="nav__link">Methodology</a></li>
+          <li class="nav__item"><a href="#results" class="nav__link">Results</a></li>
+          <li class="nav__item"><a href="#report" class="nav__link">Report Summary</a></li>
+          <li class="nav__item"><a href="#extensions" class="nav__link">Potential Extensions</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>CAMELS Multifield Dataset Analysis</span>
+        </h1>
+        <p style="color: rgba(36,155,155,0.9)">Deep Learning for Cosmology and Astrophysics.</p>
+        <a href="http://www.camels-multifield-analysis.co.uk" class="btn btn--pink">Explore the Analysis</a>
+        <p>
+          <a class="github-button" href="https://github.com/Ben-elliot27/CAMELS-Parameter-Estimation-Hyperparameter-Tuning" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @buttons on GitHub">View on Github</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Project Overview ***** -->
+    <section class="project" id="overview">
+      <div class="row">
+        <h2>Project Overview</h2>
+        <div class="project__content">
+          <p>
+            The CAMELS Multifield Dataset Analysis project utilizes <b>deep learning</b> techniques to predict fundamental <b>cosmological parameters</b> from simulated astrophysical datasets.
+            Focusing on a subset of the CAMELS dataset, this analysis explores the potential of machine learning in uncovering insights about the universe.
+          </p>
+          <p>
+            This project is a demonstration of <b>interdisciplinary research</b> at the intersection of <b>software development</b>, <b>data analysis</b>, and <b>computational physics</b>.
+          </p>
+          <img src="../../assets/images/camels/MainPageIMG.png" alt="CAMELS Dataset Overview" width="400px">
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Dataset Description ***** -->
+    <section class="dataset" id="dataset">
+      <div class="row">
+        <h2>Dataset Description</h2>
+        <p>
+          The project uses a subset of the <b>IllustrisTNG simulation</b> from the CAMELS dataset, focusing on <b>2D maps</b> where specific astrophysical parameters are varied. Key variables include:
+        </p>
+        <ul class="dataset__list">
+          <li><strong>Cosmological Parameters:</strong> $\Omega_m$, $\sigma_8$</li>
+          <li><strong>Astrophysical Parameters:</strong> $A_{SN1}$, $A_{SN2}$, $A_{AGN1}$, $A_{AGN2}$</li>
+        </ul>
+        <p>
+          The dataset spans multiple fields such as <b>Gas density</b> (Mgas), <b>Dark matter density</b> (Mcdm), and <b>Stellar mass density</b> (Mstar), providing a comprehensive set of inputs for analysis.
+        </p>
+        <img src="../../assets/images/camels/DatasetFields.png" alt="Dataset Fields" width="700px">
+      </div>
+    </section>
+
+    <!-- ***** Methodology ***** -->
+    <section class="methodology" id="methodology">
+      <div class="row">
+        <h2>Methodology</h2>
+        <div class="methodology__content">
+          <p>
+            The project methodology revolves around <b>deep learning</b> model development, leveraging <b>PyTorch</b> for training. The workflow included:
+          </p>
+          <ul class="methodology__list">
+            <li><strong>Data Preparation:</strong> Custom dataset loading and normalization.</li>
+            <li><strong>Model Selection:</strong> Building image-to-value regression models.</li>
+            <li><strong>Hyperparameter Tuning:</strong> Extensive optimization to balance performance and model complexity.</li>
+            <li><strong>Multi-Map Training:</strong> Using multiple 2D maps as input channels for improved predictions.</li>
+          </ul>
+          <div class="methodology__media">
+            <img src="../../assets/images/camels/HyperParameterTuning.png" alt="Hyperparameter Tuning" width="300px">
+            <img src="../../assets/images/camels/ModelArchitecture.png" alt="Model Architecture" width="400px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Results ***** -->
+    <section class="results" id="results">
+      <div class="row">
+        <h2>Results</h2>
+        <p>
+          The analysis revealed the potential of deep learning models in accurately predicting cosmological parameters from astrophysical datasets. Key findings include:
+        </p>
+        <ul class="results__list">
+          <li><strong>Effective Multi-Map Training:</strong> Adding multiple maps as channels enhances prediction accuracy.</li>
+          <li><strong>Model Performance:</strong> Balanced between validation loss and custom cost functions.</li>
+        </ul>
+        <img src="../../assets/images/camels/ExampleTrainingRun.png" alt="Example Training Run" width="600px">
+        <img src="../../assets/images/camels/MultipleMapsComparison.png" alt="Multiple Maps Comparison" width="600px">
+      </div>
+    </section>
+
+    <!-- ***** Report Summary ***** -->
+    <section class="report" id="report">
+      <div class="row">
+        <h2>Report Summary</h2>
+        <p>
+          The final report <a href="./Report/ML_miniproject.pdf" target="_blank"><b>(Download PDF)</b></a> provides a comprehensive analysis of the project, covering:
+        </p>
+        <ul class="report__list">
+          <li><strong>Introduction:</strong> Overview of objectives and problem statement.</li>
+          <li><strong>Data:</strong> Detailed preprocessing steps and dataset exploration.</li>
+          <li><strong>Methodology:</strong> In-depth discussion of the models and training process.</li>
+          <li><strong>Results:</strong> Analysis of model performance and key findings.</li>
+          <li><strong>Conclusion:</strong> Summary and future work recommendations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Potential Extensions ***** -->
+    <section class="extensions" id="extensions">
+      <div class="row">
+        <h2>Potential Extensions</h2>
+        <p>
+          Future work could explore:
+        </p>
+        <ul class="extensions__list">
+          <li><strong>Transfer Learning:</strong> Evaluating models trained on one field and tested on another.</li>
+          <li><strong>Generative Modeling:</strong> Developing models to predict one field from another.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+    <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <p>Project carried out by Ben Elliot as part of a UCL module</p>
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Ben-elliot27/CAMELS-Parameter-Estimation-Hyperparameter-Tuning" title="View Source Code" target="_blank">
+            <img src="../../assets/images/github.svg" class="footer__social-image" alt="GitHub">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="mailto:benjelliot@outlook.com" title="Link to email">
+            <img src="../../assets/images/email_logo.svg" class="footer__social-image" alt="Mail">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="../../assets/images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="../../assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="../../index.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+
+</html>
