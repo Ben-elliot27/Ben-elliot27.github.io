@@ -454,6 +454,12 @@ body:not(.user-is-tabbing) a:focus {
   background-repeat: no-repeat;
 }
 
+.header--camels {
+  background-image: url('assets/images/CAMELS/banner4.jpg');
+  /*background-size: contain;*/
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .header__text {
     position: absolute;
     top: 50%;
