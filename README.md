@@ -3,8 +3,8 @@
 TODO:
 
 - Update Readme
-- Get image of 1v1 gameplay for Uknow
 - Get better quality recording of uknow
+- 
 
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
