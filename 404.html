@@ -10,7 +10,157 @@
 
   <meta name="description" content="Page not found on Ben Elliot's portfolio website.">
   <meta name="keywords" content="404, Not Found, Ben Elliot, Theoretical Physics, Programming" />
-  <link rel="stylesheet" href="assets/index.css" />
+  <style>
+        /* Basic Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --font-size-small: 2rem;
+            --font-size-normal: 2.2rem;
+            --font-size-medium: 2.8rem;
+            --font-size-medium-1: 3.6rem;
+            --font-size-large: 5.5rem;
+            --font-size-huge: 7.5rem;
+            --font-stack: 'Hk Grotesk', sans-serif;
+            --line-height-normal: 1.7;
+            --line-height-small: 1.2;
+            --black: #000;
+            --pink: #ff3258;
+            --white: #f0e9f2;
+            --white-1: #e5e5e6da;
+            --container-max-width: 1180px;
+            --container-medium-width: 700px;
+            --gutter-huge: 12rem;
+            --gutter-medium: 6rem;
+            --gutter-normal: 3rem;
+            --gutter-small-1: 2.5rem;
+            --border-light: 1px solid rgb(36, 35, 35);
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: var(--font-size-small);
+            font-family: var(--font-stack);
+            font-weight: 400;
+            color: var(--white-1);
+            line-height: var(--line-height-normal);
+            background: var(--black);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: var(--gutter-normal) 0;
+        }
+
+        .nav__items {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav__item:not(:last-child) {
+            margin-right: var(--gutter-medium);
+        }
+
+        .nav__link {
+            position: relative;
+            display: inline-block;
+            padding: 1rem 0;
+            text-decoration: none;
+            color: inherit;
+            transition: all .2s;
+        }
+
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 100%;
+            display: inline-block;
+            height: 1rem;
+            background: var(--white);
+            transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+        }
+
+        .nav__link:hover {
+            color: var(--pink);
+        }
+
+        .nav__link:hover::after {
+            right: 0;
+            height: 2px;
+            background: var(--pink);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
+                url('images/header_highq.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-size: var(--font-size-normal);
+        }
+
+        .header--UCL-SpaceLab {
+            background-image: url('images/UCL-SpaceLab/BH_gif.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header__text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .header__text p {
+            margin: 1.5rem 0 3.5rem;
+            max-width: var(--container-medium-width);
+            font-family: 'Jost', sans-serif;
+            font-size: var(--font-size-medium);
+        }
+
+        /* Work Section */
+        .work__box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25rem;
+        }
+
+        .work__image-box {
+            margin-bottom: var(--gutter-normal);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: var(--gutter-medium) 0 var(--gutter-normal);
+        }
+
+        .footer__social-links {
+            display: flex;
+            justify-content: center;
+            padding: var(--gutter-normal) 0;
+            list-style: none;
+        }
+
+        .footer__social-link-item:not(:last-of-type) {
+            margin-right: var(--gutter-small);
+        }
+    </style>
 </head>
 
 <body>
