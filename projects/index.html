@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="/assets/images/index_favicon.png" />
+
+  <!-- Site Title -->
+  <title>Ben Elliot - Projects</title>
+
+  <meta name="description" content="A more comprehensive list of my projects" />
+  <meta name="keywords" content="UKnowFeynman, Particle Physics, Educational Game, Multiplayer, Card Game, portfolio, projects" />
+  <link rel="stylesheet" href="/assets/index.css" />
+  <style>
+    ul {
+      font-size: 1.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner" id="top">
+
+    <a href="../#" class="home-button">🏠</a>
+
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#uknowfeynman" class="nav__link">UKnowFeynamn</a></li>
+          <li class="nav__item"><a href="#UCL-SpaceLab" class="nav__link">SpaceLab</a></li>
+          <li class="nav__item"><a href="#camels" class="nav__link">CAMELS</a></li>
+          <li class="nav__item"><a href="#Unity-VR-BlackHole-Experience" class="nav__link">Unity VR</a></li>
+          <li class="nav__item"><a href="#report" class="nav__link">Report Summary</a></li>
+          <li class="nav__item"><a href="#extensions" class="nav__link">Potential Extensions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+          This page showcases many of my projects, though this is not a comprehensive list. Some of the featured projects include links to additional web pages with more detailed information or direct links to their respective GitHub repositories.
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box" id="uknowfeynman">
+            <div class="work__text">
+              <h3>
+                <p>
+                <img src="/assets/images/uknowfeynmanLogo.png" title="UknowfeynmanLogo" alt="Logo" height="140px">
+                </p>
+                <a title="UKnowFeynman - A Multiplayer Card Game" href="projects/uknowfeynman/" style="text-decoration: none">UKnowFeynman - A Multiplayer Card Game</a>
+              </h3>
+              <p>
+                A <b>multiplayer</b> card game designed to teach <b>particle physics</b> concepts interactively, inspired by UNO Flip.
+                Originally developed as a physical game at <b>UCL</b>, this online version makes complex science <b>accessible</b> and <b>fun</b>.
+                Hosted on <a href="http://www.uknowfeynman.co.uk" target="_blank" class="link">www.uknowfeynman.co.uk</a>.
+              </p>
+              <ul class="work__list">
+                <li><strong>Python</strong></li>
+                <li><strong>Flask, Socket.IO</strong></li>
+                <li><strong>JavaScript</strong></li>
+                <li><strong>HTML, CSS</strong></li>
+              </ul>
+
+              <div class="work__links">
+                <a href="http://www.uknowfeynman.co.uk" target="_blank" class="link__text">
+                  Play Now <span>&rarr;</span>
+                </a>
+                <p>&nbsp &nbsp</p>
+                <a href=projects/uknowfeynman/ class="link__text">
+                  More details<span>&rarr;</span>
+                </a>
+
+                <a href="https://github.com/Ben-elliot27/UknowFeynman-CardGame" title="View Source Code" target="_blank">
+                  <img src="/assets/images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <video autoplay muted loop class="work__image">
+                <source src="/assets/videos/UknowGamePlay1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="work__box" id="UCL-SpaceLab">
+            <div class="work__text">
+              <h3>
+                <img src="/assets/images/UCL-SpaceLab/LogoSpaceLab.png" title="SpaceLabLogo" alt="Logo" height="140px">
+                <p>
+                <a title="Physics - VR" href="projects/SpaceLab/" style="text-decoration: none">UCL SpaceLab</a>
+                </p>
+              </h3>
+              <p>
+                An innovative <b>VR</b> experience developed at UCL that immerses users in <b>interactive physics concepts</b>,
+                from navigating wormholes to exploring black holes, enhancing learning through <b>cutting-edge technology</b>.
+              </p>
+              <ul class="work__list">
+                <li><strong>Meta VR Headsets</strong></li>
+                <li><strong>Unreal Engine 4 (UE4)</strong></li>
+                <li><strong>3D Modeling & Animations</strong></li>
+                <li><strong>Physics Simulation</strong></li>
+                <li><strong>Physics Concept Visualization</strong></li>
+              </ul>
+
+              <div class="work__links">
+                <a href="projects/SpaceLab/#play_now" class="link__text">
+                  Play Now <span>&rarr;</span>
+                </a>
+                <p>&nbsp &nbsp</p>
+                <a href="projects/SpaceLab/" class="link__text">
+                  More details<span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <video autoplay muted loop class="work__image">
+                <source src="/assets/videos/SpaceLab-Walkthrough.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="work__box" id="camels">
+            <div class="work__text">
+              <h3>
+                <img src="/assets/images/CAMELS/logo.webp" title="CAMELSProjectLogo" alt="CAMELS project logo" height="140px">
+                <p>
+                <a title="CAMELS Dataset Analysis" href="projects/CAMELS-Multified-Dataset/" style="text-decoration: none">CAMELS Multifield Dataset Analysis</a>
+                </p>
+              </h3>
+              <p>
+                Analysis of the <b>CAMELS Multifield Dataset</b> to predict cosmological parameters using <b>deep learning</b>,
+                optimizing models for <b>accuracy</b> and <b>generalizability</b>, transferring learning across fields.
+              </p>
+              <ul class="work__list" style="font-size: 1.9rem">
+                <li><strong>Deep Learning & Neural Networks</strong></li>
+                <li><strong>PyTorch & TensorFlow</strong></li>
+                <li><strong>Data Augmentation & Normalization</strong></li>
+                <li><strong>Astrophysical Data Analysis</strong></li>
+              </ul>
+
+              <div class="work__links">
+                <a href="projects/CAMELS-Multified-Dataset/" class="link__text">
+                  More Details <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Ben-elliot27/CAMELS-Parameter-Estimation-Hyperparameter-Tuning" target="_blank">
+                  <img src="/assets/images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <figure>
+                <img src="https://camels-multifield-dataset.readthedocs.io/en/latest/_images/movie.gif" alt="Gif of maps in CAMELS dataset">
+                <figcaption style="text-align: center; font-size: 1.6rem">GIF courtesy of <a href="https://camels-multifield-dataset.readthedocs.io">Camels Multifield Dataset</a></figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="work__box" id="Unity-VR-BlackHole-Experience">
+            <div class="work__text">
+              <h3>
+                <img src="/assets/images/Unity-VR-BlackHole/Unity-Symbol.png" title="BlackHoleExperienceLogo" alt="Logo" height="140" style="filter: invert(100%)">
+                <p>
+                <a title="Unity VR Experience" href="#" style="text-decoration: none">Unity VR Black Hole Experience</a>
+                </p>
+              </h3>
+              <p>
+                A captivating <b>VR</b> experience, taking users on a <b>cosmic journey</b> from orbiting Earth to traversing black holes and wormholes, showcasing complex astronomical phenomena through <b>immersive gameplay</b>.
+              </p>
+              <ul class="work__list">
+                <li><strong>SteamVR</strong></li>
+                <li><strong>Unity Engine</strong></li>
+                <li><strong>OpenXR Integration</strong></li>
+                <li><strong>Gravitational Lensing Simulation</strong></li>
+                <li><strong>Interactive Spacecraft Controls</strong></li>
+              </ul>
+              <div class="work__links">
+             <p>
+              <a class="github-button" href="https://github.com/Ben-elliot27/VR-Black-Hole-Experience/" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @buttons on GitHub">View on Github</a>
+            </p>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <video autoplay muted loop class="work__image">
+                <source src="/assets/images/Unity-VR-BlackHole/VR-BH-Approach.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Ben-elliot27/" title="Link to Github Profile">
+            <img src="/assets/images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="mailto:benjelliot@outlook.com" title="Link to email">
+            <img src="/assets/images/email_logo.svg" class="footer__social-image" alt="Mail">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="/assets/images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="/assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="/assets/index.js"></script>
+</body>
+
+</html>
