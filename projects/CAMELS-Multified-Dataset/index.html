@@ -12,6 +12,28 @@
   <meta name="description" content="An in-depth analysis of the CAMELS Multifield Dataset using deep learning to determine cosmological parameters." />
   <meta name="keywords" content="CAMELS, Cosmology, Astrophysics, Deep Learning, Dataset Analysis" />
   <link rel="stylesheet" href="../../index.css" />
+  <style>
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+        font-size: 1.8rem;
+        }
+
+    th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+    th {
+            background-color: rgba(253, 50, 88, 0.49);
+        }
+    .equation {
+            font-family: 'Cambria Math', 'Arial', sans-serif;
+            font-style: italic;
+        }
+  </style>
 </head>
 
 <body>
@@ -60,7 +82,15 @@
           <p>
             This project is a demonstration of <b>interdisciplinary research</b> at the intersection of <b>software development</b>, <b>data analysis</b>, and <b>computational physics</b>.
           </p>
-          <img src="../../assets/images/camels/MainPageIMG.png" alt="CAMELS Dataset Overview" width="400px">
+            <p style="margin-top: 12px">
+          <h4 style="margin-bottom: 8px; font-size: 2.3rem"><strong>Key Objectives</strong>:</h4>
+          <ul class="methodology__list">
+            <li>Train machine learning <b>models</b> to predict <b>cosmological parameters</b> from individual 2D maps.</li>
+            <li>Explore the <b>effectiveness</b> of combining <b>multiple maps</b> for enhanced predictions.</li>
+            <li>Experiment with <b>transferring learning</b> across different astrophysical fields.</li>
+          </ul>
+            </p>
+            The full project report can be found <a href="/assets/ML_miniproj.pdf" target="_blank"> here</a> or viewed in the pdf viewer further down this page.
         </div>
       </div>
     </section>
@@ -70,22 +100,98 @@
       <div class="row">
         <h2>Dataset Description</h2>
         <p>
-          The project uses a subset of the <b>IllustrisTNG simulation</b> from the CAMELS dataset, focusing on <b>2D maps</b> where specific astrophysical parameters are varied. Key variables include:
+          The project uses a subset of the <b>IllustrisTNG simulation</b> from the CAMELS dataset, focusing on <b>2D maps</b>
+          where specific astrophysical parameters are varied. The key predicted <b>cosmological</b> and <b>astrophysical</b> parameters
+          can be seen in the table below as well as the astrophysical fields the model was trained on.
         </p>
-        <ul class="dataset__list">
-          <li><strong>Cosmological Parameters:</strong> $\Omega_m$, $\sigma_8$</li>
-          <li><strong>Astrophysical Parameters:</strong> $A_{SN1}$, $A_{SN2}$, $A_{AGN1}$, $A_{AGN2}$</li>
-        </ul>
-        <p>
-          The dataset spans multiple fields such as <b>Gas density</b> (Mgas), <b>Dark matter density</b> (Mcdm), and <b>Stellar mass density</b> (Mstar), providing a comprehensive set of inputs for analysis.
-        </p>
+
+        <h4>Parameter Descriptions</h4>
+<table>
+    <tr>
+        <th>Variable</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td class="equation">Ω<sub>m</sub></td>
+        <td>Matter density in the universe</td>
+    </tr>
+    <tr>
+        <td class="equation">σ<sub>8</sub></td>
+        <td>Smoothness of the matter distribution</td>
+    </tr>
+    <tr>
+        <td class="equation">A<sub>SN1</sub>, A<sub>SN2</sub></td>
+        <td>Parameters controlling supernova feedback</td>
+    </tr>
+    <tr>
+        <td class="equation">A<sub>AGN1</sub>, A<sub>AGN2</sub></td>
+        <td>Parameters controlling black-hole feedback</td>
+    </tr>
+</table>
+
+<h4>Astrophysical Fields</h4>
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Prefix</th>
+    </tr>
+    <tr>
+        <td>Gas density</td>
+        <td>Mgas</td>
+    </tr>
+    <tr>
+        <td>Gas velocity</td>
+        <td>Vgas</td>
+    </tr>
+    <tr>
+        <td>Gas temperature</td>
+        <td>T</td>
+    </tr>
+    <tr>
+        <td>Gas metallicity</td>
+        <td>Z</td>
+    </tr>
+    <tr>
+        <td>Neutral hydrogen density</td>
+        <td>HI</td>
+    </tr>
+    <tr>
+        <td>Electron number density</td>
+        <td>ne</td>
+    </tr>
+    <tr>
+        <td>Magnetic fields</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td>Magnesium over Iron</td>
+        <td>MgFe</td>
+    </tr>
+    <tr>
+        <td>Dark matter density</td>
+        <td>Mcdm</td>
+    </tr>
+    <tr>
+        <td>Dark matter velocity</td>
+        <td>Vcdm</td>
+    </tr>
+    <tr>
+        <td>Stellar mass density</td>
+        <td>Mstar</td>
+    </tr>
+    <tr>
+        <td>Total matter density</td>
+        <td>Mtot</td>
+    </tr>
+</table>
+
         <figure>
           <div class="work__image-box">
             <video autoplay muted loop width="600" class="work__image" style="max-height: 600px;">
                     <source src="../../assets/videos/illustris_movie_all_subboxes.mp4" type="video/mp4">
             </video>
           </div>
-          <figcaption style="text-align: center; font-size: 1.6rem">Simulation video courtesy of Illustris Collaboration.
+          <figcaption style="text-align: center; font-size: 1.8rem">Simulation video courtesy of Illustris Collaboration.
             Time evolution of four separate sub-regions of the Illustris volume, from high redshift to z=0, showing
             gas temperature. Each region is several Mpc on a side, and each samples a different over-density relative
             to the cosmic mean, from highly over-dense (top left) to under-dense (counter-clockwise).</figcaption>
@@ -101,18 +207,41 @@
           <p>
             The project methodology revolves around <b>deep learning</b> model development, leveraging <b>PyTorch</b> for training. The workflow included:
           </p>
-          <ul class="methodology__list">
-            <li><strong>Data Preparation:</strong> Custom dataset loading and normalization.</li>
-            <li><strong>Model Selection:</strong> Building image-to-value regression models.</li>
-            <li><strong>Hyperparameter Tuning:</strong> Extensive optimization to balance performance and model complexity.</li>
-            <li><strong>Multi-Map Training:</strong> Using multiple 2D maps as input channels for improved predictions.</li>
-          </ul>
-          <div class="methodology__media">
-            <img src="../../assets/images/camels/HyperParameterTuning.png" alt="Hyperparameter Tuning" width="300px">
-            <img src="../../assets/images/camels/ModelArchitecture.png" alt="Model Architecture" width="400px">
+        <ol>
+            <li>
+                <strong>Data Preparation</strong>:
+                <ul style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>Loaded and normalized the dataset using a custom <code>CAMELS_Dataset</code> class.</li>
+                    <li>Applied data augmentation techniques but found no significant improvement in accuracy.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Model Selection and Training</strong>:
+                <ul style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>Developed a deep learning model using PyTorch for image-to-value regression.</li>
+                    <li>Conducted extensive hyperparameter tuning to optimize model performance.</li>
+                    <li>Evaluated the models based on both validation loss and a custom cost function to balance model size and accuracy.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Multi-Map Training</strong>:
+                <ul style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>
+                        Experimented with training models on combinations of multiple maps, finding that including additional maps as channels yielded better results.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            <h4>
+            <strong>Network Architecture and Hyperparameter Tuning Figures: </strong>
+            </h4>
+        </p>
+          <div class="methodology__media" style="text-align: center; margin-top: 50px">
+
+              <img src="../../assets/images/CAMELS/NetworkArch.png" height="409" width="750" alt="Network Architecture"/>
+            <img src="../../assets/images/CAMELS/HyperParam.png" height="291" width="750" alt="Hyperparameter tuning flow chart"/>
           </div>
-        </div>
-      </div>
     </section>
 
     <!-- ***** Results ***** -->
@@ -120,14 +249,16 @@
       <div class="row">
         <h2>Results</h2>
         <p>
-          The analysis revealed the potential of deep learning models in accurately predicting cosmological parameters from astrophysical datasets. Key findings include:
+          The analysis revealed the potential of <b>deep learning models</b> in <b>accurately</b> predicting <b>cosmological parameters</b> from astrophysical datasets. Key findings include:
         </p>
         <ul class="results__list">
           <li><strong>Effective Multi-Map Training:</strong> Adding multiple maps as channels enhances prediction accuracy.</li>
           <li><strong>Model Performance:</strong> Balanced between validation loss and custom cost functions.</li>
         </ul>
-        <img src="../../assets/images/camels/ExampleTrainingRun.png" alt="Example Training Run" width="600px">
-        <img src="../../assets/images/camels/MultipleMapsComparison.png" alt="Multiple Maps Comparison" width="600px">
+          <p style="text-align: center; margin-top: 50px">
+              <img src="../../assets/images/CAMELS/TrainingGraph.png" height="352" width="750" alt="Example training graph for model"/>
+              <img src="../../assets/images/CAMELS/otherMapsTestLoss.png" height="386" width="750" alt="Test loss for model trained on one map for other maps"/>
+              <img src="../../assets/images/CAMELS/imagesVSchannels.png" height="554" width="750" alt="Difference between models trained on more images or more channels"/></p>
       </div>
     </section>
 
@@ -136,7 +267,7 @@
       <div class="row">
         <h2>Report Summary</h2>
         <p>
-          The final report <a href="./Report/ML_miniproject.pdf" target="_blank"><b>(Download PDF)</b></a> provides a comprehensive analysis of the project, covering:
+          The final report <a href="/assets/ML_miniproj.pdf" target="_blank"><b>(Download PDF)</b></a> provides a comprehensive analysis of the project, covering:
         </p>
         <ul class="report__list">
           <li><strong>Introduction:</strong> Overview of objectives and problem statement.</li>
@@ -145,6 +276,49 @@
           <li><strong>Results:</strong> Analysis of model performance and key findings.</li>
           <li><strong>Conclusion:</strong> Summary and future work recommendations.</li>
         </ul>
+          <p>
+              <iframe src="/assets/ML_miniproj.pdf" width="100%" height="600px" title="Project Report"></iframe>
+          </p>
+
+      </div>
+    </section>
+
+      <section class="report" id="feedback">
+      <div class="row">
+        <h2>Feedback</h2>
+        <p><h3><b>Feedback on Report</b>:</h3></p>
+
+        <ul>
+            <li><strong>Strengths</strong>:
+                <ul  style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>Professionally formatted with clear figures, captions, and tables.</li>
+                    <li>Justified model choice with a well-described training process.</li>
+                    <li>Clear presentation of results.</li>
+                </ul>
+            </li>
+            <li><strong>Areas for Improvement</strong>:
+                <ul  style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>Stronger connection with the underlying physics and parameters could enhance the report.</li>
+                    <li>Inclusion of visualizations of the input data maps is recommended.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><h3><b>Feedback on Code</b></h3></p>
+        <ul>
+            <li><strong>Strengths</strong>:
+                <ul  style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>Reasonably well-formatted and easy-to-navigate notebooks.</li>
+                    <li>Clear code with a good use of machine learning techniques.</li>
+                </ul>
+            </li>
+            <li><strong>Areas for Improvement</strong>:
+                <ul  style="margin-left: 50px; margin-top: 10px; margin-bottom: 10px">
+                    <li>More markdown or commenting to clarify the purpose of each code block would be beneficial.</li>
+                </ul>
+            </li>
+        </ul>
+
       </div>
     </section>
 
