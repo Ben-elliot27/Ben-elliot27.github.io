@@ -4,7 +4,7 @@ TODO:
 
 - Update Readme
 - Get better quality recording of uknow
-- 
+- Thumbnails for all videos on projects page
 
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
