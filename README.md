@@ -35,8 +35,8 @@ To run this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Ben-elliot27/portfolio-website.git
-   cd portfolio-website
+   git clone [https://github.com/Ben-elliot27/Ben-elliot27.github.io.git](https://github.com/Ben-elliot27/Ben-elliot27.github.io.git)
+   cd Ben-elliot27.github.io
    ```
 
 2. **Open `index.html`** in your preferred web browser to view the site.
