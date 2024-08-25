@@ -41,3 +41,37 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('.scroll-fade-in');
+
+    const elementInView = (el, offset = 0) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return (
+            elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset)
+        );
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add('in-view');
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove('in-view');
+    };
+
+    const handleScrollAnimation = () => {
+        elements.forEach((el) => {
+            if (elementInView(el, 100)) {
+                displayScrollElement(el);
+            } else {
+                hideScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', () => {
+        handleScrollAnimation();
+    });
+});
+
