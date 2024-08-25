@@ -35,7 +35,7 @@ To run this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/Ben-elliot27/Ben-elliot27.github.io.git](https://github.com/Ben-elliot27/Ben-elliot27.github.io.git)
+   git clone https://github.com/Ben-elliot27/Ben-elliot27.github.io.git
    cd Ben-elliot27.github.io
    ```
 
